@@ -117,7 +117,7 @@ export default function Portfolio() {
                 className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-primary/20 shadow-glow"
               />
               <h3 className="font-semibold text-lg">Varney Fahnbulleh</h3>
-              <p className="text-sm text-muted-foreground">AI & Growth Specialist</p>
+              <p className="text-sm text-muted-foreground">System Administrator & Social Media Manager</p>
             </div>
 
             <div className="rounded-lg border border-border bg-surface p-4">
