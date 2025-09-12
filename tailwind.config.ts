@@ -19,6 +19,16 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          muted: "hsl(var(--surface-muted))",
+        },
+        brand: {
+          primary: "hsl(var(--brand-primary))",
+          "primary-light": "hsl(var(--brand-primary-light))",
+          "primary-dark": "hsl(var(--brand-primary-dark))",
+          accent: "hsl(var(--brand-accent))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -30,6 +40,10 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
