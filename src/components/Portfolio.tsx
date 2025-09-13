@@ -136,7 +136,7 @@ export default function Portfolio() {
               </div>
 
               <div className="mt-6 flex gap-3">
-                <a href="mailto:varney@example.com" className="flex-1 btn-primary justify-center">
+                <a href="mailto:humbletech2019@gmail.com" className="flex-1 btn-primary justify-center">
                   Start a project
                 </a>
                 <a href="#contact" className="flex-1 btn-secondary justify-center">
@@ -378,7 +378,7 @@ export default function Portfolio() {
 
               <div className="space-y-4 text-sm">
                 {[
-                  { icon: FiMail, label: "varney@example.com", href: "mailto:varney@example.com" },
+                  { icon: FiMail, label: "humbletech2019@gmail.com", href: "mailto:humbletech2019@gmail.com" },
                   { icon: FiPhone, label: "+1 (234) 567-890", href: "tel:+1234567890" },
                   { icon: FiLinkedin, label: "linkedin.com/in/varney", href: "https://www.linkedin.com/in/varney" },
                   { icon: FiGithub, label: "github.com/varney", href: "https://github.com/varney" }
