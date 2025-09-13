@@ -379,7 +379,7 @@ export default function Portfolio() {
               <div className="space-y-4 text-sm">
                 {[
                   { icon: FiMail, label: "humbletech2019@gmail.com", href: "mailto:humbletech2019@gmail.com" },
-                  { icon: FiPhone, label: "+1 (234) 567-890", href: "tel:+1234567890" },
+                  { icon: FiPhone, label: "+233245916697", href: "tel:+233245916697" },
                   { icon: FiLinkedin, label: "linkedin.com/in/varney", href: "https://www.linkedin.com/in/varney" },
                   { icon: FiGithub, label: "github.com/varney", href: "https://github.com/varney" }
                 ].map((contact, index) => (
