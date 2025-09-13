@@ -65,7 +65,7 @@ export default function Portfolio() {
         >
           <motion.h1 
             variants={fadeInUp} 
-            className="text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-brand-primary to-brand-primary-light bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-brand-primary via-brand-primary-light to-brand-accent bg-clip-text text-transparent text-neon"
           >
             AI-powered growth for startups and agencies
           </motion.h1>
@@ -94,10 +94,10 @@ export default function Portfolio() {
 
           <motion.div 
             variants={fadeInUp} 
-            className="mt-8 p-4 rounded-lg bg-surface/50 border border-border/50"
+            className="mt-8 p-4 rounded-xl glass"
           >
             <div className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Specialties:</strong> AI automation, prompt engineering, React, Next.js, Headless CMS,
+              <strong className="text-brand-primary">Specialties:</strong> AI automation, prompt engineering, React, Next.js, Headless CMS,
               SEO, paid ads (PPC), analytics & growth experiments.
             </div>
           </motion.div>
@@ -109,19 +109,19 @@ export default function Portfolio() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-96"
         >
-          <div className="gradient-surface rounded-2xl p-6 shadow-lg border border-border/50">
+          <div className="gradient-surface rounded-2xl p-6 shadow-neon">
             <div className="text-center mb-6">
               <img 
                 src={profilePhoto} 
                 alt="Varney Fahnbulleh - AI Developer and Digital Marketing Expert"
-                className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-primary/20 shadow-glow"
+                className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-primary/40 shadow-neon"
               />
-              <h3 className="font-semibold text-lg">Varney Fahnbulleh</h3>
+              <h3 className="font-semibold text-lg text-brand-primary">Varney Fahnbulleh</h3>
               <p className="text-sm text-muted-foreground">System Administrator & Social Media Manager</p>
             </div>
 
-            <div className="rounded-lg border border-border bg-surface p-4">
-              <h4 className="text-sm font-medium text-muted-foreground">Availability</h4>
+            <div className="rounded-xl glass p-4">
+              <h4 className="text-sm font-medium text-brand-primary">Availability</h4>
               <p className="mt-2 font-medium">Open for freelance consulting & select partnerships</p>
 
               <div className="mt-4 space-y-3 text-sm">
@@ -226,7 +226,7 @@ export default function Portfolio() {
                 <motion.div
                   key={category.title}
                   variants={fadeInUp}
-                  className="p-6 rounded-lg gradient-surface border border-border/50 shadow-sm hover:shadow-md transition-all"
+                  className="p-6 rounded-xl gradient-surface shadow-lg hover:shadow-neon transition-all duration-300 hover:scale-105"
                 >
                   <h4 className="font-semibold mb-3 text-brand-primary">{category.title}</h4>
                   <ul className="text-sm text-muted-foreground space-y-2">
@@ -289,7 +289,7 @@ export default function Portfolio() {
               <motion.article
                 key={index}
                 variants={fadeInUp}
-                className="grid lg:grid-cols-3 gap-8 p-6 rounded-lg border border-border bg-surface shadow-sm hover:shadow-md transition-all"
+                className="grid lg:grid-cols-3 gap-8 p-6 rounded-xl glass shadow-lg hover:shadow-neon transition-all duration-300 hover:scale-[1.02]"
               >
                 <div className="lg:col-span-2 space-y-4">
                   <h3 className="text-xl font-semibold text-brand-primary">{project.title}</h3>
@@ -346,7 +346,7 @@ export default function Portfolio() {
                 <motion.blockquote
                   key={index}
                   variants={fadeInUp}
-                  className="p-6 rounded-lg bg-surface border border-border shadow-sm"
+                  className="p-6 rounded-xl glass shadow-lg hover:shadow-glow transition-all duration-300"
                 >
                   <p className="text-muted-foreground leading-relaxed mb-4">"{testimonial.quote}"</p>
                   <footer className="text-sm font-medium text-brand-primary">— {testimonial.author}</footer>
@@ -372,8 +372,8 @@ export default function Portfolio() {
           </motion.p>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <motion.div variants={fadeInUp} className="p-6 rounded-lg border border-border bg-surface">
-              <h4 className="font-semibold mb-4">Get in touch</h4>
+            <motion.div variants={fadeInUp} className="p-6 rounded-xl glass shadow-lg">
+              <h4 className="font-semibold mb-4 text-brand-primary">Get in touch</h4>
               <p className="text-sm text-muted-foreground mb-6">Email is best — I typically respond within 48 hours.</p>
 
               <div className="space-y-4 text-sm">
@@ -404,8 +404,8 @@ export default function Portfolio() {
               </div>
             </motion.div>
 
-            <motion.form variants={fadeInUp} onSubmit={handleSubmit} className="p-6 rounded-lg border border-border bg-surface">
-              <h4 className="font-semibold mb-4">Quick message</h4>
+            <motion.form variants={fadeInUp} onSubmit={handleSubmit} className="p-6 rounded-xl glass shadow-lg">
+              <h4 className="font-semibold mb-4 text-brand-primary">Quick message</h4>
               
               <div className="space-y-4">
                 <div>
@@ -413,7 +413,7 @@ export default function Portfolio() {
                   <input 
                     id="name"
                     type="text"
-                    className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm focus:ring-2 focus:ring-ring focus:border-transparent"
+                    className="w-full rounded-xl border border-brand-primary/20 bg-surface/50 backdrop-blur-sm px-3 py-2 text-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary/50 transition-all"
                     required
                   />
                 </div>
@@ -423,7 +423,7 @@ export default function Portfolio() {
                   <input 
                     id="email"
                     type="email"
-                    className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm focus:ring-2 focus:ring-ring focus:border-transparent"
+                    className="w-full rounded-xl border border-brand-primary/20 bg-surface/50 backdrop-blur-sm px-3 py-2 text-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary/50 transition-all"
                     required
                   />
                 </div>
@@ -433,7 +433,7 @@ export default function Portfolio() {
                   <textarea 
                     id="message"
                     rows={4}
-                    className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm focus:ring-2 focus:ring-ring focus:border-transparent resize-none"
+                    className="w-full rounded-xl border border-brand-primary/20 bg-surface/50 backdrop-blur-sm px-3 py-2 text-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary/50 transition-all resize-none"
                     required
                   />
                 </div>
