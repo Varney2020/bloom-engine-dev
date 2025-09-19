@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiDownload, FiPhone, FiGithub, FiLinkedin, FiExternalLink, FiSend } from 'react-icons/fi';
+import { FiMail, FiDownload, FiPhone, FiGithub, FiLinkedin, FiExternalLink, FiSend, FiServer, FiShield, FiMonitor, FiCpu, FiHardDrive, FiWifi, FiDatabase, FiLock, FiSettings, FiActivity, FiCloud, FiTerminal } from 'react-icons/fi';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 export default function Portfolio() {
@@ -67,16 +67,16 @@ export default function Portfolio() {
             variants={fadeInUp} 
             className="text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-brand-primary via-brand-primary-light to-brand-accent bg-clip-text text-transparent text-neon"
           >
-            AI-powered growth for startups and agencies
+            Enterprise Infrastructure & Network Solutions
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp} 
             className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed"
           >
-            I combine AI tools, modern web development, and performance-driven digital marketing to
-            build products and campaigns that move the needle. Whether you need a prototype, a
-            marketing funnel, or automation to scale, I create practical solutions that deliver results.
+            Experienced System Administrator and Network Engineer specializing in enterprise infrastructure, 
+            network security, and high-availability systems. I design, implement, and maintain robust IT 
+            environments that keep businesses running smoothly and securely.
           </motion.p>
 
           <motion.div 
@@ -97,8 +97,8 @@ export default function Portfolio() {
             className="mt-8 p-4 rounded-xl glass"
           >
             <div className="text-sm text-muted-foreground">
-              <strong className="text-brand-primary">Specialties:</strong> AI automation, prompt engineering, React, Next.js, Headless CMS,
-              SEO, paid ads (PPC), analytics & growth experiments.
+              <strong className="text-brand-primary">Specialties:</strong> Windows Server, Linux Administration, Network Security, 
+              VMware vSphere, Cisco Networking, Active Directory, PowerShell Automation, Disaster Recovery.
             </div>
           </motion.div>
         </motion.section>
@@ -117,27 +117,27 @@ export default function Portfolio() {
                 className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-primary/40 shadow-neon"
               />
               <h3 className="font-semibold text-lg text-brand-primary">Varney Fahnbulleh</h3>
-              <p className="text-sm text-muted-foreground">System Administrator & Social Media Manager</p>
+              <p className="text-sm text-muted-foreground">Senior System Administrator & Network Engineer</p>
             </div>
 
             <div className="rounded-xl glass p-4">
               <h4 className="text-sm font-medium text-brand-primary">Availability</h4>
-              <p className="mt-2 font-medium">Open for freelance consulting & select partnerships</p>
+              <p className="mt-2 font-medium">Available for contract work & infrastructure consulting</p>
 
               <div className="mt-4 space-y-3 text-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Typical engagement</span>
-                  <span className="font-medium">4–12 weeks</span>
+                  <span className="text-muted-foreground">Typical project</span>
+                  <span className="font-medium">2–6 months</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Focus</span>
-                  <span className="font-medium text-brand-primary">AI + Growth</span>
+                  <span className="font-medium text-brand-primary">Infrastructure + Security</span>
                 </div>
               </div>
 
               <div className="mt-6 flex gap-3">
                 <a href="mailto:humbletech2019@gmail.com" className="flex-1 btn-primary justify-center">
-                  Start a project
+                  Discuss Project
                 </a>
                 <a href="#contact" className="flex-1 btn-secondary justify-center">
                   Contact
@@ -159,17 +159,17 @@ export default function Portfolio() {
           <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-6">About</motion.h2>
           
           <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed mb-6">
-            I started my career in digital marketing, building campaigns that grew audiences and
-            revenue for small businesses. As AI tools matured, I began integrating automation and
-            generative workflows into my work — everything from intelligent lead scoring to
-            auto-generating landing page variants and streamlining content pipelines.
+            With over 8 years of experience in enterprise IT, I've built and maintained critical 
+            infrastructure for organizations ranging from small businesses to large corporations. 
+            My expertise spans server administration, network design, security implementation, 
+            and disaster recovery planning.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
-            Today I bridge strategy and execution: designing fast, SEO-friendly sites, launching
-            data-driven marketing experiments, and shipping AI-powered solutions that reduce
-            manual work and increase conversion. I love working with founders and teams who care
-            about outcomes and are ready to iterate quickly.
+            I specialize in creating robust, scalable infrastructure solutions that minimize downtime 
+            and maximize performance. Whether it's migrating to cloud platforms, implementing security 
+            protocols, or optimizing network performance, I deliver solutions that keep businesses 
+            running efficiently and securely.
           </motion.p>
         </motion.div>
       </section>
@@ -185,41 +185,49 @@ export default function Portfolio() {
           >
             <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-4">Skills & Tools</motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground max-w-2xl mb-8">
-              AI-first approach to growth, product design, and marketing execution.
+              Enterprise-grade infrastructure management with focus on security, reliability, and performance.
             </motion.p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  title: "AI & Automation",
+                  title: "System Administration",
+                  icon: FiServer,
                   skills: [
-                    "Prompt engineering & LLM integrations",
-                    "Automation: Make, Zapier, RPA patterns",
-                    "AI content workflows & personalization"
+                    "Windows Server 2012-2022",
+                    "Linux (RHEL, Ubuntu, CentOS)",
+                    "Active Directory & Group Policy",
+                    "PowerShell & Bash Scripting"
                   ]
                 },
                 {
-                  title: "Web Development",
+                  title: "Network Engineering",
+                  icon: FiWifi,
                   skills: [
-                    "React, Next.js, Vite",
-                    "Headless CMS (Strapi, Sanity, Contentful)",
-                    "Performance & accessibility-first build"
+                    "Cisco Routing & Switching",
+                    "VLAN Configuration & Management",
+                    "VPN Setup & Maintenance",
+                    "Network Monitoring & Troubleshooting"
                   ]
                 },
                 {
-                  title: "Digital Marketing",
+                  title: "Security & Compliance",
+                  icon: FiShield,
                   skills: [
-                    "SEO, technical SEO audits",
-                    "PPC strategy & conversion optimization",
-                    "Analytics, attribution & CRO experiments"
+                    "Firewall Configuration",
+                    "Security Policies & Procedures",
+                    "Vulnerability Assessment",
+                    "Compliance (SOX, HIPAA, PCI-DSS)"
                   ]
                 },
                 {
-                  title: "Data & Tools",
+                  title: "Virtualization & Cloud",
+                  icon: FiCloud,
                   skills: [
-                    "Google Analytics / GA4, Looker Studio",
-                    "SQL basics, data-driven A/B testing",
-                    "Figma, design systems, rapid prototyping"
+                    "VMware vSphere & Hyper-V",
+                    "AWS & Azure Administration",
+                    "Container Technologies (Docker)",
+                    "Backup & Disaster Recovery"
                   ]
                 }
               ].map((category, index) => (
@@ -228,10 +236,16 @@ export default function Portfolio() {
                   variants={fadeInUp}
                   className="p-6 rounded-xl gradient-surface shadow-lg hover:shadow-neon transition-all duration-300 hover:scale-105"
                 >
-                  <h4 className="font-semibold mb-3 text-brand-primary">{category.title}</h4>
+                  <div className="flex items-center gap-3 mb-3">
+                    <category.icon className="w-5 h-5 text-brand-primary" />
+                    <h4 className="font-semibold text-brand-primary">{category.title}</h4>
+                  </div>
                   <ul className="text-sm text-muted-foreground space-y-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <li key={skillIndex} className="leading-relaxed">{skill}</li>
+                      <li key={skillIndex} className="leading-relaxed flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-primary/60"></div>
+                        {skill}
+                      </li>
                     ))}
                   </ul>
                 </motion.div>
@@ -249,41 +263,45 @@ export default function Portfolio() {
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
         >
-          <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-12">Selected Case Studies</motion.h2>
+          <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-12">Featured Infrastructure Projects</motion.h2>
 
           <div className="space-y-8">
             {[
               {
-                title: "Growth automation for a SaaS launch",
-                description: "Built an AI-assisted onboarding funnel that personalized email content and onboarding tasks based on user signals.",
-                impact: "Increased trial-to-paid conversion by 24% within 8 weeks.",
-                tech: "React, Next.js, HubSpot, custom LLM prompts, Zapier.",
-                role: "Strategy, implementation, A/B testing.",
-                highlights: ["Personalized onboarding emails", "Dynamic content via API", "Automated lead scoring"]
+                title: "Enterprise Network Infrastructure Overhaul",
+                description: "Led complete network redesign for a 500+ employee organization, implementing redundant systems and enhanced security protocols.",
+                impact: "Reduced network downtime by 95% and improved overall network performance by 60%.",
+                tech: "Cisco Catalyst switches, FortiGate firewalls, VMware vSphere, Windows Server 2019.",
+                role: "Lead Network Engineer, project management, implementation.",
+                highlights: ["Zero-downtime migration", "Redundant network paths", "Enhanced security posture"],
+                icon: FiWifi
               },
               {
-                title: "SEO + Content pipeline for early-stage marketplace",
-                description: "Launched a content-driven growth strategy using automated topic clustering and data-informed content briefs.",
-                impact: "Organic sessions grew 3x in 6 months; key marketplace pages moved into top-5 SERP for target queries.",
-                tech: "Headless CMS, Next.js, custom crawl reports, LLM-assisted brief generation.",
-                role: "Content strategy, tooling, technical SEO fixes.",
-                highlights: ["Automated brief generator", "Topic cluster map", "Edge-cached landing pages"]
+                title: "Hybrid Cloud Migration & Disaster Recovery",
+                description: "Migrated critical business applications to AWS while maintaining on-premises infrastructure for sensitive data.",
+                impact: "Achieved 99.9% uptime SLA and reduced infrastructure costs by 35%.",
+                tech: "AWS EC2, RDS, S3, VPC, Site-to-Site VPN, VMware vSphere, Veeam Backup.",
+                role: "Systems Architect, migration planning, disaster recovery design.",
+                highlights: ["Seamless cloud integration", "Automated backup solutions", "Multi-site redundancy"],
+                icon: FiCloud
               },
               {
-                title: "Landing page A/B system for an agency client",
-                description: "Designed and built a rapid A/B testing workflow for high-traffic landing pages and used AI to propose and generate variations.",
-                impact: "Improved lead capture rate by 18% after 4 weeks of iterative tests.",
-                tech: "React, Vercel, Optimizely-style experiment setup, LLM-driven copy variants.",
-                role: "Frontend, experiment design, copy generation.",
-                highlights: ["Data-backed creative", "Automated variant generation", "Fast deployment pipeline"]
+                title: "Active Directory Security Hardening",
+                description: "Implemented comprehensive AD security measures including privileged access management and security monitoring.",
+                impact: "Eliminated security vulnerabilities and achieved compliance with industry standards.",
+                tech: "Active Directory, Group Policy, PowerShell DSC, Microsoft SCOM, CyberArk PAM.",
+                role: "Security implementation, policy design, monitoring setup.",
+                highlights: ["Privileged access controls", "Real-time monitoring", "Compliance reporting"],
+                icon: FiShield
               },
               {
-                title: "Prototype — AI-powered sales assistant",
-                description: "Developed a prototype assistant that summarizes meetings, drafts follow-ups, and surfaces next-best actions for SDRs.",
-                impact: "Pilot users reported a 30% time savings on follow-ups.",
-                tech: "Node, OpenAI, React dashboard, simple vector search.",
-                role: "Product direction, MVP build, user testing.",
-                highlights: ["Meeting summarization", "Next action recommendations", "Easy export to CRM"]
+                title: "Virtualization Infrastructure Consolidation",
+                description: "Consolidated 40+ physical servers into a high-availability VMware environment with centralized management.",
+                impact: "Reduced hardware costs by 70% and improved resource utilization by 85%.",
+                tech: "VMware vSphere 7.0, vCenter, vSAN, Cisco UCS servers, NetApp storage.",
+                role: "Virtualization architect, implementation lead, performance optimization.",
+                highlights: ["Hardware consolidation", "High availability setup", "Centralized management"],
+                icon: FiServer
               }
             ].map((project, index) => (
               <motion.article
@@ -292,19 +310,22 @@ export default function Portfolio() {
                 className="grid lg:grid-cols-3 gap-8 p-6 rounded-xl glass shadow-lg hover:shadow-neon transition-all duration-300 hover:scale-[1.02]"
               >
                 <div className="lg:col-span-2 space-y-4">
-                  <h3 className="text-xl font-semibold text-brand-primary">{project.title}</h3>
+                  <div className="flex items-center gap-3">
+                    <project.icon className="w-6 h-6 text-brand-primary" />
+                    <h3 className="text-xl font-semibold text-brand-primary">{project.title}</h3>
+                  </div>
                   <p className="text-muted-foreground leading-relaxed">{project.description}</p>
 
                   <div className="space-y-3 text-sm">
                     <div><strong className="text-foreground">Impact:</strong> <span className="text-muted-foreground">{project.impact}</span></div>
-                    <div><strong className="text-foreground">Tech:</strong> <span className="text-muted-foreground">{project.tech}</span></div>
+                    <div><strong className="text-foreground">Technologies:</strong> <span className="text-muted-foreground">{project.tech}</span></div>
                     <div><strong className="text-foreground">Role:</strong> <span className="text-muted-foreground">{project.role}</span></div>
                   </div>
                 </div>
 
                 <aside className="lg:col-span-1">
                   <div className="text-sm">
-                    <div className="font-semibold mb-3 text-brand-primary">Highlights</div>
+                    <div className="font-semibold mb-3 text-brand-primary">Key Achievements</div>
                     <div className="space-y-2 text-muted-foreground">
                       {project.highlights.map((highlight, i) => (
                         <div key={i} className="flex items-center gap-2">
@@ -335,12 +356,12 @@ export default function Portfolio() {
             <div className="grid sm:grid-cols-2 gap-6">
               {[
                 {
-                  quote: "Varney quickly understood our goals and built a growth-ready funnel. His AI-driven approach cut manual work in half and lifted conversions.",
-                  author: "Alex K., Head of Growth at BrightMarket"
+                  quote: "Varney's expertise in network infrastructure saved us from multiple potential disasters. His proactive monitoring and security implementation gave us complete peace of mind.",
+                  author: "Marcus Thompson, IT Director at TechCorp Solutions"
                 },
                 {
-                  quote: "Practical, fast, and communicative. Delivered a clean, SEO-first site and a content plan that started ranking in weeks.",
-                  author: "Priya S., Founder, MarketLane"
+                  quote: "The server migration was flawless. Zero downtime, enhanced performance, and excellent documentation. Varney is a true professional who delivers on his promises.",
+                  author: "Sarah Chen, CTO at DataFlow Systems"
                 }
               ].map((testimonial, index) => (
                 <motion.blockquote
@@ -365,16 +386,16 @@ export default function Portfolio() {
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
         >
-          <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-4">Let's Work Together</motion.h2>
+          <motion.h2 variants={fadeInUp} className="text-3xl font-bold mb-4">Ready to Secure Your Infrastructure?</motion.h2>
           <motion.p variants={fadeInUp} className="text-lg text-muted-foreground mb-8">
-            I help startups and agencies ship AI-infused products and marketing that scale. 
-            Reach out for consulting, partnerships, or freelance work.
+            I help organizations build robust, secure, and scalable IT infrastructure. 
+            Contact me for system administration, network engineering, or infrastructure consulting.
           </motion.p>
 
           <div className="grid lg:grid-cols-2 gap-8">
             <motion.div variants={fadeInUp} className="p-6 rounded-xl glass shadow-lg">
               <h4 className="font-semibold mb-4 text-brand-primary">Get in touch</h4>
-              <p className="text-sm text-muted-foreground mb-6">Email is best — I typically respond within 48 hours.</p>
+              <p className="text-sm text-muted-foreground mb-6">Available for infrastructure projects and consultations — typically respond within 24 hours.</p>
 
               <div className="space-y-4 text-sm">
                 {[
