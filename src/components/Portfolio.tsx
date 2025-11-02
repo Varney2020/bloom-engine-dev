@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiDownload, FiPhone, FiGithub, FiLinkedin, FiExternalLink, FiSend, FiServer, FiShield, FiMonitor, FiCpu, FiHardDrive, FiWifi, FiDatabase, FiLock, FiSettings, FiActivity, FiCloud, FiTerminal } from 'react-icons/fi';
+import { FiMail, FiDownload, FiPhone, FiGithub, FiFacebook, FiExternalLink, FiSend, FiServer, FiShield, FiMonitor, FiCpu, FiHardDrive, FiWifi, FiDatabase, FiLock, FiSettings, FiActivity, FiCloud, FiTerminal } from 'react-icons/fi';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 export default function Portfolio() {
@@ -401,7 +401,7 @@ export default function Portfolio() {
                 {[
                   { icon: FiMail, label: "humbletech2019@gmail.com", href: "mailto:humbletech2019@gmail.com" },
                   { icon: FiPhone, label: "+233245916697", href: "tel:+233245916697" },
-                  { icon: FiLinkedin, label: "linkedin.com/in/varney", href: "https://www.linkedin.com/in/varney" },
+                  { icon: FiFacebook, label: "facebook.com/varney.fahnbulleh.52", href: "https://web.facebook.com/varney.fahnbulleh.52" },
                   { icon: FiGithub, label: "github.com/varney", href: "https://github.com/varney" }
                 ].map((contact, index) => (
                   <div key={index} className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
